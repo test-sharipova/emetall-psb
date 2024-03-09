@@ -1,0 +1,354 @@
+@media screen and (max-width:1439px) {
+    .psb-promo {
+        background-position: right 40% top;
+    }
+    .psb-about {
+        &__item {
+            &__img {
+                right: -6%;
+            }
+            &__title {
+                z-index: 1;
+            }
+        }
+        &__wrapper {
+            gap: 8px;
+        }
+    }
+    .psb-form {
+        &__form {
+            &__wrap {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+@media screen and (max-width:1023px) {
+    .psb-wins {
+        &__wrapper {
+            gap: 16px;
+        }
+    }
+    .psb-about {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            gap: 16px;
+
+        }
+        &__item {
+            &__img {
+                right: 0;
+            }
+        }
+    }
+    
+    .psb-form {
+        &__wrapper {
+            padding: 32px;
+        }
+    }
+}
+@media screen and (max-width:747px) {
+    .container {
+        width: 100%;
+        padding: 0 16px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .psb-promo {
+        background-image: url(../img/promo-bg-mob.png);
+        background-position: left bottom;
+        padding-bottom: 308px;
+        padding-top: 40px;
+        &__logo {
+            display: none;
+        }
+        &__content {
+            padding: 0 8px 0 16px;
+            width: 100%;
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 137%;
+            margin-bottom: 24px;
+            max-width: 90%;
+        }
+        &__text {
+            font-size: 16px;
+            gap: 12px;
+            line-height: 150%;
+            align-items: flex-start;
+            margin-bottom: 13px;
+            &::before {
+                width: 16px;
+                height: 11px;
+                min-width: 16px;
+                min-height: 11px;
+                margin-top: 7px;
+            }
+        }
+        .psb-btn {
+            margin-top: 24px;
+        }
+    }
+    .psb-wins {
+        padding-top: 48px;
+        padding-bottom: 24px;
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px 15px;
+            margin-top: 16px;
+        }
+        &__item {
+            padding: 24px 5px 16px 16px;
+            min-height: 151px;
+            &:nth-child(3), &:nth-child(4) {
+                padding-top: 16px;
+            }
+            &__title {
+                font-size: 16px;
+                line-height: normal;
+                margin-top: 8px;
+            }
+            &__text {
+                font-size: 12px;
+                line-height: normal;
+            }
+        }
+    }
+    .psb-about {
+        padding: 24px 0;
+        .title {
+            max-width: 71%;
+            margin: 0 auto;
+        }
+        &__wrapper {
+            margin-top: 24px;
+        }
+        &__item {
+            padding: 29px 24px 32px;
+            &__title {
+                font-size: 20px;
+                margin-bottom: 12px;
+            }
+            &__text {
+                font-size: 14px;
+            }
+            &__img {
+                position: relative;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, 0px);
+            }
+            &__wrap {
+                flex-direction: column;
+                margin-top: -52px;
+                z-index: 1;
+                margin-bottom: 20px;
+            }
+            &:nth-child(1) {
+                .psb-about__item__wrap {
+                    margin-top: -8px;
+                }
+            }
+            &:nth-child(2) {
+                .psb-about__item__img {
+                    top: -16px;
+                }
+            }
+            &__item {
+                min-height: 54px;
+                padding: 12px 20px 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &:nth-child(1) {
+                    border-radius: 12px 12px 0 0;
+                    
+                }
+                &:nth-child(3) {
+                    border-radius: 0 0 12px 12px;
+                }
+            }
+            &__gray {
+                font-size: 20px;
+                order: 2;
+                margin-bottom: 0;
+            }
+            &__btns {
+                flex-direction: column;
+                .psb-btn, .psb-btn_transparent {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .psb-credit {
+        padding: 24px 0;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            margin-top: 32px;
+            gap: 40px;
+        }
+        &__item {
+            img {
+                margin-bottom: 16px;
+            }
+        }
+        &__img {
+            margin: 0;
+            &::after, &::before {
+                visibility: hidden;
+            }
+        }
+    }
+    .psb-options {
+        padding: 24px 0 12px;
+        .psb {
+            &-tabs {
+                &__caption {
+                    flex-direction: column;
+                    
+                    margin: 0 8px 32px;
+                    li {
+                        &:hover {
+                            background-color: transparent;
+                            color: $text-color;
+                        }
+                        br {
+                            display: block;
+                        }
+                        padding-right: 6px;
+                        &:nth-child(1) {
+                            border-radius: 6px 6px 0 0;
+                            border-right: 1px solid #ddd;
+                            &:hover {
+                                border-right: 1px solid $blue;
+                            }
+                        }
+                        &:nth-child(2) {
+                            border-radius: 0 0 6px 6px;
+                            &:not(.active) {
+                                border-left-color: #ddd;
+                                &:hover {
+                                    border-left-color: $blue;
+                                }
+                            }
+                            .active {
+                                border-left-color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__title {
+            font-size: 20px;
+            br {
+                display: block;
+            }
+        }
+        &__table {
+            margin-top: 13px;
+            margin-bottom: 45px;
+        }
+        &__item {
+            grid-template-columns: 1fr;
+            padding: 12px 0 14px;
+            height: auto;
+            span {
+                font-size: 14px;
+                line-height: 143%;
+                &:nth-child(1) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &__list {
+            margin-top: 24px;
+            li {
+                font-size: 14px;
+                gap: 12px;
+                line-height: 143%;
+                align-items: flex-start;
+                margin-bottom: 20px;
+                &::before {
+                    width: 16px;
+                    height: 11px;
+                    min-width: 16px;
+                    min-height: 11px;
+                   margin-top: 5px;
+                }
+            }
+        }
+    }
+    .psb-form {
+        padding: 16px 0;
+        .title {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 143%;
+            max-width: 90%;
+        }
+        &__wrapper {
+            flex-direction: column;
+            padding: 32px;
+            gap: 4px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+        }
+        &__content {
+            max-width: 100%;
+        }
+        &__form {
+            
+            &__wrap {
+                margin-bottom: 16px;
+            }
+        }
+        .psb-btn {
+            width: 100%;
+        }
+        &__input {
+            width: 100%;
+
+        }
+        &__label {
+            width: 100%;
+        }
+    }
+    .modal {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        border-radius: 0;
+        padding: 32px;
+        &__title {
+            font-size: 18px;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+        .btn_blue {
+            span {
+                display: none;
+            }
+        }
+        &__img {
+            max-width: 100px;
+        }
+    }
+    .thanks {
+       
+        padding: 32px;
+        min-width: 270px;
+    }
+}

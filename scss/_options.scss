@@ -1,0 +1,109 @@
+.psb-tabs__content {
+    display: none; 
+    
+  }
+  .psb-tabs__content.active {
+    display: block; 
+  }
+  .psb-options {
+    padding: 40px 0 24px;
+    .psb-tabs {
+        margin-top: 24px;
+        &__caption {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin-bottom: 40px;
+            li {
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 100%;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                cursor: pointer;
+                padding: 9px 16px;
+                height: 38px;
+                transition: all .3s;
+                
+                &:hover {
+                    background-color: $blue;
+                    color: #fff;
+                    border-color: $blue;
+                }
+                &:nth-child(1) {
+                    border-radius: 6px 0 0 6px;
+                    border-right: none;
+                }
+                &:nth-child(2) {
+                    border-radius: 0 6px 6px 0;
+                   
+                    &:not(.active) {
+                        border-left-color: #fff;
+                        &:hover {
+                            border-left-color: $blue;
+                        }
+                    }
+                    .active {
+                        border-left-color: $blue;
+                    }
+                }
+                &.active {
+                    border: 1px solid $blue;
+                }
+            }
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        br {
+            display: none;
+        }
+        span {
+            font-weight: 300;
+        }
+    }
+    &__table {
+        margin-top: 14px;
+        margin-bottom: 56px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        border-bottom: 1px solid #f2f2f4;
+        min-height: 63px;
+        padding: 20px 0;
+        span {
+            font-size: 16px;
+            max-width: 300px;
+            &:nth-child(1) {
+                font-weight: 600;
+            }
+        }
+    }
+    &__list {
+        list-style-type: none;
+        margin-top: 33px;
+
+        li {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+            font-size: 16px;
+            &::before {
+                content: '';
+                width: 23px;
+                height: 16px;
+                min-width: 23px;
+                min-height: 16px;
+                background: url(../img/check-blue.svg) no-repeat center/contain;
+                display: block;
+            }
+        }
+    }
+  }

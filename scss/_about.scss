@@ -1,0 +1,72 @@
+.psb-about {
+    padding: 40px 0;
+    &__wrapper {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 37px;
+
+    }
+    &__item {
+        padding: 40px 40px 32px;
+        background-color: #eff2f6;
+        border-radius: 12px;
+        position: relative;
+        min-height: 405px;
+        display: flex;
+        flex-direction: column;
+        &__img {
+            position: absolute;
+            right: 0;
+            top: -38px;
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: normal;
+            margin-bottom: 16px;
+            span {
+                font-weight: 400;
+            }
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 137%;
+            flex-grow: 1;
+            max-width: 314px;
+        }
+        &__wrap {
+            display: flex;
+            gap: 1px;
+            margin-bottom: 24px;
+            width: 100%;
+        }
+        &__item {
+            background-color: #fff;
+            padding: 16px 20px 21px;
+            min-height: 95px;
+            flex-grow: 1;
+            &:nth-child(1) {
+                border-radius: 12px 0 0 12px;
+            }
+            &:nth-child(3) {
+                border-radius: 0 12px 12px 0;
+            }
+        }
+        &__gray {
+            font-size: 24px;
+            color: #9295ae;
+            line-height: normal;
+            margin-bottom: 4px;
+            white-space: nowrap;
+        }
+        &__subtext {
+            font-size: 16px;
+            line-height: 137%;
+        }
+        &__btns {
+            display: flex;
+            gap: 16px;
+        }
+    }
+}

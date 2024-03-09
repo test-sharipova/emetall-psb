@@ -1,0 +1,47 @@
+.psb-credit {
+    padding: 40px 0 40px;
+    &__wrapper {
+        margin-top: 64px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+    }
+    
+    &__img {
+        
+        margin: 0 auto 29px;
+       
+        padding-inline: 0;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 8px;
+        align-items: center;
+        &::before, &::after {
+            content: "";
+            border-bottom: 1px solid #F2F2F4;
+        }
+    }
+    &__item {
+        &:first-child {
+            .psb-credit__img {
+                &::before {
+                    visibility: hidden;
+                }
+            }
+        }
+        &:last-child {
+            .psb-credit__img {
+                &::after {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+    &__text {
+        text-align: center;
+        font-size: 16px;
+        line-height: 137%;
+        max-width: 273px;
+        margin: 0 auto;
+    }
+}

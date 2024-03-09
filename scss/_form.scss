@@ -1,0 +1,72 @@
+.psb-form {
+    padding: 40px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.12);
+        background: #fff;
+        border-radius: 30px;
+        padding: 75px 100px 110px;
+        gap: 16px;
+    }
+    .title {
+        text-align: left;
+        margin-bottom: 24px;
+        text-wrap: balance;
+    }
+    &__content {
+        max-width: 369px;
+    }
+    &__form {
+        &__wrap {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 33px;
+            margin-top: 18px;
+        }
+        .psb-btn {
+            width: 214px;
+        }
+        
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 139%;
+        a {
+            color: $text-color;
+            transition: opacity .3s;
+            text-decoration: none;
+            white-space: nowrap;
+            &:hover {
+                opacity: .85;
+            }
+        }
+    }
+    &__label {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: normal;
+        
+        display: block;
+        span {
+            display: block;
+            margin-bottom: 8px;
+        }
+    }
+    &__input {
+        height: 44px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        background-color: #fff;
+        padding: 12px 20px;
+        font-size: 15px;
+        width: 257px;
+        &::placeholder {
+            color: $text-color;
+        }
+        &:focus {
+            outline: 4px solid #E9EFFC;
+            border: 1px solid #2764E0;
+          }
+    }
+}
