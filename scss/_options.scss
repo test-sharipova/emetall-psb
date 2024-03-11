@@ -51,6 +51,10 @@
                 }
                 &.active {
                     border: 1px solid $blue;
+                    background-color: #E9F0FC;
+                    &:hover {
+                        background-color: $blue;
+                    }
                 }
             }
         }
